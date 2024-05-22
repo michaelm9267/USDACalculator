@@ -128,11 +128,11 @@ const updateTotals = () => {
         totals.meat += parseFloat(select.value);
     });
 
-    document.querySelector(".totalMilk").textContent = totals.milk === 0 ? "None" : decimalToFraction(totals.milk);
-    document.querySelector(".totalFruits").textContent = totals.fruit === 0 ? "None" : decimalToFraction(totals.fruit);
-    document.querySelector(".totalVegetables").textContent = totals.vegetable === 0 ? "None" : decimalToFraction(totals.vegetable);
-    document.querySelector(".totalGrains").textContent = totals.grain === 0 ? "None" : decimalToFraction(totals.grain);
-    document.querySelector(".totalMeat").textContent = totals.meat === 0 ? "None" : decimalToFraction(totals.meat);
+    document.querySelector(".totalMilk").textContent = totals.milk === 0 ? "None" : `${decimalToFraction(totals.milk)} (${totals.milk.toFixed(2)})`;
+    document.querySelector(".totalFruits").textContent = totals.fruit === 0 ? "None" : `${decimalToFraction(totals.fruit)} (${totals.fruit.toFixed(2)})`;
+    document.querySelector(".totalVegetables").textContent = totals.vegetable === 0 ? "None" : `${decimalToFraction(totals.vegetable)} (${totals.vegetable.toFixed(2)})`;
+    document.querySelector(".totalGrains").textContent = totals.grain === 0 ? "None" : `${decimalToFraction(totals.grain)} (${totals.grain.toFixed(2)})`;
+    document.querySelector(".totalMeat").textContent = totals.meat === 0 ? "None" : `${decimalToFraction(totals.meat)} (${totals.meat.toFixed(2)})`;
 };
 
 document.querySelectorAll("select").forEach(select => {
