@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#resetButton {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.calculatorContainer {
+    margin: 20px;
+    width: 80%;
+}
+
+.calculatorContainer h4 {
+    margin-bottom: 5px;
+}
+
+.calculatorContainer div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 5px 0 2px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.totals {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.totals h4 {
+    margin: 10px 0;
+}
+
+.totals p {
+    margin: 0;
+   
+}
+
+/* Media query for screens 600px and below */
+@media (max-width: 600px) {
+    .calculatorContainer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    select {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .totals {
+        width: 100%;
+        padding: 5px;
+    }
+}
