@@ -26,6 +26,7 @@ childData.forEach((child) => {
             <option value="0.75">3/4</option>
             <option value="1">1</option>
             <option value="1.5">1 1/2</option>
+            <option value="2">2</option>
         </select>
         <label for="fruit-${child.id}">Fruits</label>
         <select id="fruit-${child.id}" class="fruit">
@@ -36,6 +37,7 @@ childData.forEach((child) => {
             <option value="0.75">3/4</option>
             <option value="1">1</option>
             <option value="1.5">1 1/2</option>
+            <option value="2">2</option>
         </select>
         <label for="vegetable-${child.id}">Vegetables</label>
         <select id="vegetable-${child.id}" class="vegetable">
@@ -46,6 +48,7 @@ childData.forEach((child) => {
             <option value="0.75">3/4</option>
             <option value="1">1</option>
             <option value="1.5">1 1/2</option>
+            <option value="2">2</option>
         </select>
         <label for="grain-${child.id}">Grains</label>
         <select id="grain-${child.id}" class="grain">
@@ -56,6 +59,7 @@ childData.forEach((child) => {
             <option value="0.75">3/4</option>
             <option value="1">1</option>
             <option value="1.5">1 1/2</option>
+            <option value="2">2</option>
         </select>
         <label for="meat-${child.id}">Meat and/or Alt</label>
         <select id="meat-${child.id}" class="meat">
@@ -66,6 +70,7 @@ childData.forEach((child) => {
             <option value="0.75">3/4</option>
             <option value="1">1</option>
             <option value="1.5">1 1/2</option>
+            <option value="2">2</option>
         </select>
         </div>
     `;
