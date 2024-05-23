@@ -75,6 +75,7 @@ select {
 .totals > div {
     padding: 10px;
     background-color: #fffdfd;
+    border-radius: 5px;
   }
 
 
