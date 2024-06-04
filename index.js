@@ -7,15 +7,14 @@ const childData = [
     { "id": 6, "childname": "Child 6" },
     { "id": 7, "childname": "Child 7" },
     { "id": 8, "childname": "Child 8" },
-
 ];
 
 const calculatorContainer = document.querySelector(".calculatorContainer");
 
 childData.forEach((child) => {
     const childDiv = document.createElement("div");
+    childDiv.classList.add("childCnt");
     childDiv.innerHTML = `
-        <div class="childCnt">
         <h4>${child.childname}</h4>
         <label for="milk-${child.id}">Fluid Milk</label>
         <select id="milk-${child.id}" class="milk">
@@ -72,7 +71,6 @@ childData.forEach((child) => {
             <option value="1.5">1 1/2</option>
             <option value="2">2</option>
         </select>
-        </div>
     `;
     calculatorContainer.appendChild(childDiv);
 });
